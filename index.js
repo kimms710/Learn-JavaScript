@@ -62,3 +62,24 @@ const greetingInput = (name) => { // parameter
 };
 greetingInput("ms"); // argument -> parameter
 greetingInput("성식");
+
+const add = (num1, num2) => {
+    console.log("num1: ", num1);
+    console.log("num2: ", num2);
+    return num1 + num2;
+};
+
+const doubleSum = (num) => {
+    return num * 2;
+};
+
+// add(10, 20);
+console.log("value: ", add(10, 20));
+
+const addResult = add(10, 20);
+console.log("addResult: ", addResult);
+
+const doubleResult = doubleSum(addResult);
+console.log("doubleResult: ", doubleResult);
+
+
