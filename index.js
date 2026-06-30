@@ -35,3 +35,5 @@ console.log("empty2 Type ?", typeof empty2);
 //mission 나머지 변수들도 타입확인하는 코드 작성 콘솔에 출력
 //console.log(" Type ?", typeof );
 
+//함수
+
