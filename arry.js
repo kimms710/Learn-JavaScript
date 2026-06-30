@@ -38,6 +38,8 @@ console.log("student", student);
 
 // 객체 특정 요소 추출
 console.log("student name: ", student.name);
+const abc = "name";
+console.log("student name: ", student[abc]); //키값이 고정되어있지 않을때 주로 사용
 
 // misson 2번째로 좋아하는 color 추출해서 출력하기
 console.log("student favorit color: ", student.favoritcolor[1]);
