@@ -33,3 +33,10 @@ animals.forEach((value, index) => {
     // 각 요소들을 순회하면서 실행 반복 로직
     console.log(`🐾${index}번째: ${value}🐶`)
 })
+
+/*
+  1. map - 배열
+  2. filter - 배열'
+  3. find - 요소 or undefined
+  4. some/every - boolean
+*/
