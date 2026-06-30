@@ -57,10 +57,8 @@ function greeting() {
 // 함수 실행
 //greeting();
 
-const greetingInput = (name) => {
-    console.log("???님! 반갑습니다.");
+const greetingInput = (name) => { // parameter
+    console.log(`${name}님! 반갑습니다.`);
 };
-greetingInput();
-greetingInput();
-greetingInput();
-greetingInput();
+greetingInput("ms"); // argument -> parameter
+greetingInput("성식");
