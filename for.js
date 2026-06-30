@@ -40,3 +40,35 @@ animals.forEach((value, index) => {
   3. find - 요소 or undefined
   4. some/every - boolean
 */
+
+// map: 기존 배열을 조작하여 새로운 배열 return (원복 수정 없음)
+const names = ["Alexander", "Sebastian", "Victoria", "Isabella", "Nathaniel"];
+
+// 대문자 변환된 배열
+const upperNames = names.map((value) => value.toUpperCase());
+console.log("upperNames: ", upperNames)
+
+// 이모지가 추가된 배열
+const emogiNmaes = names.map((name) => `${name}❤️`);
+console.log("emogiNmaes: ", emogiNmaes)
+console.log("names: ", names)
+
+// filter: 배열안의 요소들 중 조건을 만족하는 요소들로 새로운 배열 return
+// 조건 만족하지 않으면 빈배열 return
+
+//글자수가 9자 이상인 요소들만 모은 배열
+const filterNames = names.filter((name) => name.length >= 9)
+console.log("filterNames: ", filterNames)
+
+// find: 배열안의 요소들 중 조건을 만족하는 첫번째 요소 하나를 return
+// 조건 만족하지 않으면 undefined 리턴
+const findNames = names.find((name) => name.length >= 9)
+console.log("findNames: ", findNames)
+
+// some/every: 배열안의 요소들 중 조건을 만족하는지에 대한 boolean return
+// 둘 차리 하나라도 t -> t / 모두가 t -> t
+const someNames = names.some((name) => name.length >= 9)
+console.log("someNames: ", someNames)
+
+const everyNames = names.every((name) => name.length >= 9)
+console.log("everyNames: ", everyNames)
