@@ -12,3 +12,33 @@ const daysOfWeek = [
 ];
 
 console.log("daysOfWeek Array", daysOfWeek);
+
+console.log(daysOfWeek[4]); // Monday (첫 번째 요소)
+console.log(daysOfWeek[6]); // Thursday (네 번째 요소)
+
+for (let i = 0; i < daysOfWeek.length; i++) {
+    console.log(daysOfWeek[i]);
+}
+
+const today = daysOfWeek[1];
+console.log("today: ", today)
+
+//mission 가장 좋아하는 요일 출력
+
+const favoriteDay = daysOfWeek[4];
+console.log("My favorite day of the week is: ", favoriteDay)
+
+//객체: key와 value로 구성된 속성들의 묶음
+const student = {
+    name: "M-S",
+    mbti: "ESFJ",
+    favoritcolor: ["Green", "SkyBlue", "Yellow"]
+};
+console.log("student", student);
+
+// 객체 특정 요소 추출
+console.log("student name: ", student.name);
+
+// misson 2번째로 좋아하는 color 추출해서 출력하기
+console.log("student favorit color: ", student.favoritcolor[1]);
+console.log("student mbti: ", student.mbti);
