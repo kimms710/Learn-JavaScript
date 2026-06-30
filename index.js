@@ -82,4 +82,18 @@ console.log("addResult: ", addResult);
 const doubleResult = doubleSum(addResult);
 console.log("doubleResult: ", doubleResult);
 
+//mission 입력 받은 문자열 대소문자 변환 
 
+const toUpper = (str) => {
+    return str.toUpperCase();
+};
+
+const toLower = (str) => {
+    return str.toLowerCase();
+};
+
+const upperRseult = toUpper("hello! ms");
+console.log("upperRseult: ", upperRseult);
+
+const lowerRseult = toLower(toUpper("hello! ms"));
+console.log("lowerRseult: ", lowerRseult);
