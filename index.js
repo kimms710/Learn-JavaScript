@@ -37,3 +37,30 @@ console.log("empty2 Type ?", typeof empty2);
 
 //함수
 
+//함수 정의
+function greeting() {
+    // 로직
+    // 목표: "user님! 반갑습니다."" 문자열을 console에 출력
+
+    // 1. user name 변수 선언
+    //const inputUserName = "";
+    // 2. user에게 name 받아와서 변수에 담기
+    const inputUserName = window.prompt("Please enter user name.");
+    //console.log("inputUserName:", inputUserName);
+    // 3. "변수 + 님! 반갑습니다." 문자열 완성하기
+    //const result = inputUserName + "님! 반갑습니다.";
+    const result = `${inputUserName}님! 반갑습니다.`; //가독성 백틱으로 감싸야됨 ` (백틱)키보드 숫자 1 왼쪽, ESC 아래 키
+    // 4. 완성된 문자열 console에 출력
+    console.log(result);
+};
+
+// 함수 실행
+//greeting();
+
+const greetingInput = (name) => {
+    console.log("???님! 반갑습니다.");
+};
+greetingInput();
+greetingInput();
+greetingInput();
+greetingInput();
